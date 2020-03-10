@@ -1,12 +1,71 @@
+<!-- https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Survey Form</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="main">
+		<header class="header">
+			<!-- user story #1 -->
+			<h1 id="title">Survey Fooorm</h1>
+
+			<!-- user story #2 -->
+			<p id="description">description goes here</p>
+		</header>
+
+		<!-- user story #3 #10 #11 -->
+		<form id="survey-form">
+			<!-- user story #4 -->
+			<label id="name-label" for="name">Enter your name:</label>
+			<input id="name" name="name" type="text" placeholder="John Doe" required />
+			
+			<!-- user story #5 #6 -->
+			<label id="email-label" for="email">Enter your email:</label>
+			<input id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="me@example.com" required />
+			
+			<!-- user story #7 #8 #9 -->
+			<label id="number-label" for="number">Enter your age:</label>
+			<input id="number" name="number" type="number" min="0" max="150" placeholder="13" />
+			
+			<!-- user story #12 -->
+			<label id="select-label" for="dropdown">Select one:</label>
+			<select id="dropdown" name="dropdown" required>
+				<option id="opt1" name="opt1" value="opt1">Option 1</option>
+				<option id="opt2" name="opt2" value="opt2">Option 2</option>
+				<option id="opt3" name="opt3" value="opt3">Option 3</option>
+
+			</select>
+
+			<!-- user story #13 -->
+			<input id="first" name="name" value="first" type="radio" />
+			<label id="first-radio-label" for="first">First</label>
+			<input id="second" name="name" value="second" type="radio" />
+			<label id="second-radio-label" for="second">Second</label>
+
+			<!-- user story #14 -->
+			<input id="third" name="third" value="third" type="checkbox" />
+			<label id="third-check-label" for="third">Third</label>
+			<input id="fourth" name="fourth" value="fourth" type="checkbox" />
+			<label id="fourth-check-label" for="fourth">Fourth</label>
+
+			<!-- user story #15 -->
+			<label id="textarea-label" for="textarea">Type here:</label>
+			<textarea id="textarea" name="textarea" rows="5" cols="20"></textarea>
+
+			<!-- user story #16 -->
+			<label id="submit-label" for="submit"></label>
+			<input id="submit" name="submit" type="submit">
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
